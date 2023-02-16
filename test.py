@@ -1,8 +1,8 @@
-print('cyce')
+print('works')
 a,b = map(int, input().split())
 
 if a > b:
-    print('duze')
+    print('works fine')
 
 class Pierogi:
     def __init__(self, ilosc):
