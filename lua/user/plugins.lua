@@ -61,14 +61,18 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Completion
-  use "christianchiarulli/nvim-cmp"
+  use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
+  use "hrsh7th/cmp-nvim-lsp-signature-help"
+  use "hrsh7th/cmp-vsnip"
+  use "hrsh7th/vim-vsnip"
   use "zbirenbaum/copilot-cmp"
+  -- Rust tests
 
   -- Snippet
   use "L3MON4D3/LuaSnip" --snippet engine

@@ -4,6 +4,6 @@ require('gruvbox').setup({
     bold = true,
     inverser = true,
 })
-vim.cmd("colorscheme gruvbox")
 
+vim.cmd("colorscheme gruvbox")
 
