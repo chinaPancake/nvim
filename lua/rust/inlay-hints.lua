@@ -6,5 +6,7 @@ require("inlay-hints").setup({
   }
 })
 
-
-
+--
+--
+--
+-- require("lsp-inlayhints").on_attach(client, bufnr)

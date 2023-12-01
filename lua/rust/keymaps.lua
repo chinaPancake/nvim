@@ -5,6 +5,7 @@ local term_opts = { silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
+vim.cmd 'let mapleader = ","'
 
 normal_mode = "n"
 insert_mode = "i"
@@ -17,6 +18,8 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+keymap("n", "<C-v>", "<C-w>v", opts)
+keymap("n", "<C-s>", "<C-w>s", opts)
 
 -- Start python file from Function keys
 keymap("n", "<F9>", ":!cargo build <CR>", opts) -- Cargo build
@@ -32,8 +35,9 @@ keymap("n", "<leader>+", "<C-W>=",opts)
 -- Set ctrl + f for "/" in insert mode
 keymap("i", "<C-f>", "<esc>/", opts)
 
+--Nvim-Tree Toggle
+keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 -- Sey keymap for leader key on space
-vim.cmd 'let mapleader = ","'
 
 
 return M

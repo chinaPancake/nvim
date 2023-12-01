@@ -50,6 +50,7 @@ return packer.startup(function(use)
 	use "wbthomason/packer.nvim" -- Have packer manage itself
 	use 'williamboman/mason.nvim'    
 	use 'williamboman/mason-lspconfig.nvim'
+    use "lukas-reineke/lsp-format.nvim"
 
 	use 'neovim/nvim-lspconfig' 
 	use 'simrat39/rust-tools.nvim'
@@ -66,7 +67,8 @@ return packer.startup(function(use)
 	use 'hrsh7th/cmp-path'                              
 	use 'hrsh7th/cmp-buffer'                            
 	use 'hrsh7th/vim-vsnip'      
-    --use 'lvimuser/lsp-inlayhints.nvim'
+
+    use 'lvimuser/lsp-inlayhints.nvim'
 	use 'simrat39/inlay-hints.nvim'
 	use 'nvim-telescope/telescope.nvim'
     use 'nvim-treesitter/nvim-treesitter'
